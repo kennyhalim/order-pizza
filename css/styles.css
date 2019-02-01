@@ -22,8 +22,8 @@ body {
 }
 
 #intro img {
-  width:60%;
-  height:60%;
+  width:55%;
+  height:55%;
   -webkit-animation: pulse 0.7s;
   -webkit-animation-iteration-count:2;
 }
