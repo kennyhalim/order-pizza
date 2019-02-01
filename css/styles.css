@@ -20,7 +20,11 @@ body {
   -webkit-animation: fadeInUp 1.5s;
 }
 
-
+#orderToppings ul, li{
+  color:red;
+  margin-left: -50px;
+  list-style-position: inside;
+}
 
 #kenny, #github {
   position: relative;
