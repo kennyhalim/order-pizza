@@ -39,7 +39,6 @@ function attachButtonListeners() {
   });
 }
 
-
 //User Interface
 $(document).ready(function(){
   attachButtonListeners();
