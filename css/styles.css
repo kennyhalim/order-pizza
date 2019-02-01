@@ -14,18 +14,37 @@ body {
 }
 
 .jumbotron h1 {
-  -webkit-animation: zoomIn 1s ;
+  -webkit-animation: tada 1s ;
+}
+
+#intro h3 {
+  -webkit-animation: flash 1s;
 }
 
 #orderPage, #confirmationPage {
   display: none;
 }
 
+#orderPage {
+  text-align: left;
+}
+
+#orderPage #selectToppings{
+  text-align: center;
+}
+
+#orderPage #centerButton{
+  text-align: center;
+}
 
 #orderToppings ul, li{
-  color:#FBE7B2;
+  color:#F2C649;
   margin-left: -50px;
   list-style-position: inside;
+}
+
+p .email {
+  font-size:20px;
 }
 
 #kenny, #github {

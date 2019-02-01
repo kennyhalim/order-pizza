@@ -53,7 +53,7 @@ $(document).ready(function(){
     sizeOfPizza = sizeOfPizza.split(' ');
     var size = sizeOfPizza[0];
     var pizza1 = new Pizza(size);
-    $("#order-receipt").html("<strong>" +size + " Pizza </strong></br> with these toppings:");
+    $("#order-receipt").html("<strong>" +size + " Pizza </strong>");
 
 
     $("input:checkbox[name=pizzaToppings]:checked").each(function(){

@@ -17,9 +17,9 @@
 
     <div class="container-fluid">
       <div id="intro">
-        <p>Having hungry stomach?</p>
+        <h3>Are you HANGRY?</h3><br>
         <div id="button1">
-          <button type="button" class="btn btn-info" id="btnStart">Start Ordering!</button>
+          <button type="button" class="btn btn-info" id="btnStart"><h5>Start Ordering!</h5></button>
         </div>
       </div>
 
@@ -27,17 +27,17 @@
         <form id="pizzaOrder">
           <div class="form-group">
             <label for="name">Full Name</label>
-            <input id="name" class="form-control" type="text" >
+            <input id="name" class="form-control" type="text" required>
           </div>
 
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input id="email" class="form-control" type="text" >
+            <input id="email" class="form-control" type="text" required>
           </div>
 
           <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input id="phone" class="form-control" type="number" >
+            <input id="phone" class="form-control" type="tel" maxlength="10" required>
           </div>
 
           <div class="form-group">
@@ -50,37 +50,39 @@
             </select>
           </div>
 
-          <div class="form-group">
+          <div class="form-group" id="selectToppings">
             <p>Pick your toppings! (Each toppings are $1)</p>
-            <input type="checkbox" name="pizzaToppings" value="Pepperoni">Pepperoni<br>
-            <input type="checkbox" name="pizzaToppings" value="Sausage">Sausage<br>
-            <input type="checkbox" name="pizzaToppings" value="Italian-Sausage">Italian Sausage<br>
-            <input type="checkbox" name="pizzaToppings" value="Bacon">Bacon<br>
-            <input type="checkbox" name="pizzaToppings" value="Grilled-Chicken">Grilled Chicken<br>
-            <input type="checkbox" name="pizzaToppings" value="Extra-Cheese">Extra Cheese<br>
-            <input type="checkbox" name="pizzaToppings" value="Mushroom">Mushrooms<br>
-            <input type="checkbox" name="pizzaToppings" value="Pineapple">Pineapple<br>
-            <input type="checkbox" name="pizzaToppings" value="Olive">Black Olives<br>
-            <input type="checkbox" name="pizzaToppings" value="Green-Pepper">Green Peppers<br>
-            <input type="checkbox" name="pizzaToppings" value="Spinach">Spinach<br>
+            <input type="checkbox" name="pizzaToppings" value="Pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="pizzaToppings" value="Sausage"> Sausage<br>
+            <input type="checkbox" name="pizzaToppings" value="Italian-Sausage"> Italian Sausage<br>
+            <input type="checkbox" name="pizzaToppings" value="Bacon"> Bacon<br>
+            <input type="checkbox" name="pizzaToppings" value="Grilled-Chicken"> Grilled Chicken<br>
+            <input type="checkbox" name="pizzaToppings" value="Extra-Cheese"> Extra Cheese<br>
+            <input type="checkbox" name="pizzaToppings" value="Mushroom"> Mushrooms<br>
+            <input type="checkbox" name="pizzaToppings" value="Pineapple"> Pineapple<br>
+            <input type="checkbox" name="pizzaToppings" value="Olive"> Black Olives<br>
+            <input type="checkbox" name="pizzaToppings" value="Green-Pepper"> Green Peppers<br>
+            <input type="checkbox" name="pizzaToppings" value="Spinach"> Spinach<br>
           </div>
-
-          <button type="submit" class="btn btn-primary">Submit Order!</button>
+          <div id="centerButton">
+            <button type="submit" class="btn btn-primary" id="btnSubmit">Submit Order!</button>
+          </div>
         </form>
       </div>
 
       <div id="confirmationPage">
         <h2>Thank you <span class="name"></span> for your order!</h2>
         <p>We will email the order confirmation to your email at <br>
-          <span class="email"></span>
-        </p>
-        <p>Your total is $<span class="totalAmount"></span></p>
-        <p>Below is your pizza order:</p>
-        <p id="order-receipt">
-          <ul id="order-toppings"></ul>
-        </p>
+          <em><span class="email"></span></em>
+        </p><br>
+        <h4>Your total is <strong>$<span class="totalAmount"></span></strong></h4><br>
+        <h4>Below is your pizza order:</h4>
+        <h3 id="order-receipt"></h3>
+        <h5>with these toppings:</h5>
+        <ul id="order-toppings"></ul>
+
         <div id="button2">
-          <button type="button" class="btn btn-info" id="btnMenu">Main Menu</button>
+          <button type="button" class="btn btn-primary" id="btnMenu">Main Menu</button>
         </div>
       </div>
 
