@@ -17,7 +17,7 @@ Pizza.prototype.calculateTotal = function(){
     total = total + 9;
   } else if (this.size === "Large") {
     total = total + 11;
-  } else if (this.size === "Extra Large") {
+  } else if (this.size === "Extra") {
     total = total + 14;
   }
 
@@ -28,9 +28,21 @@ Pizza.prototype.calculateTotal = function(){
   return total;
 }
 
+function attachButtonListeners() {
+  $("#button1").on("click", "#btnStart", function(){
+    $("#intro").hide();
+    $("#orderPage").show();
+  });
+
+  $("#button2").on("click", "#btnMenu", function(){
+    location.reload();
+  });
+}
+
 
 //User Interface
 $(document).ready(function(){
+  attachButtonListeners();
   $("form#pizzaOrder").submit(function(event){
     var inputtedName = $("input#name").val();
     var inputtedEmail = $("input#email").val();
@@ -54,7 +66,8 @@ $(document).ready(function(){
     $(".email").text(inputtedEmail);
     $(".totalAmount").text(pizza1.calculateTotal());
 
-
+    $("#orderPage").hide();
+    $("#confirmationPage").show();
     event.preventDefault();
   });
 });

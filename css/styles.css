@@ -1,11 +1,12 @@
 body {
-  background-color: #EADEDB;
+  background-color: black;
   font-family: 'Space Mono', monospace;
   text-align: center;
+  color: white;
 }
 
 .jumbotron {
-  background-color: #EC9787;
+  background-color: #FD3A4A;
 }
 
 .jumbotron h1, p {
@@ -20,8 +21,13 @@ body {
   -webkit-animation: fadeInUp 1.5s;
 }
 
+#orderPage, #confirmationPage {
+  display: none;
+}
+
+
 #orderToppings ul, li{
-  color:red;
+  color:#FBE7B2;
   margin-left: -50px;
   list-style-position: inside;
 }
@@ -37,7 +43,7 @@ body {
 }
 
 #kenny a {
-  color: #223A5E;
+  color: #50BFE6;
 }
 
 .githublink {
