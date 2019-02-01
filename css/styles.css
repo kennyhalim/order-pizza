@@ -17,10 +17,6 @@ body {
   -webkit-animation: zoomIn 1s ;
 }
 
-.jumbotron p {
-  -webkit-animation: fadeInUp 1.5s;
-}
-
 #orderPage, #confirmationPage {
   display: none;
 }
