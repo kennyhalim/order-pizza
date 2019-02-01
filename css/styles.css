@@ -1,0 +1,88 @@
+body {
+  background-color: #EADEDB;
+  font-family: 'Space Mono', monospace;
+}
+
+.jumbotron {
+  background-color: #EC9787;
+}
+
+.jumbotron h1, p {
+  text-align: center;
+}
+
+.jumbotron h1 {
+  -webkit-animation: zoomIn 1s ;
+}
+
+.jumbotron p {
+  -webkit-animation: fadeInUp 1.5s;
+}
+
+.panelhead {
+  background-color: #D1B894;
+}
+
+.panelbody {
+  background-color: #EAE6DA;
+
+}
+
+.panel {
+  -webkit-animation: fadeInLeft 1.5s;
+}
+
+#example {
+  text-align: center;
+  border:2px solid #FFCC99;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#example {
+  -webkit-animation: zoomInRight 1.3s;
+}
+
+.centerButton {
+  text-align: center;
+}
+
+.btnBoop {
+  background-color: #00A591;
+  color: #EAE6DA;
+}
+
+#userInput {
+  text-align: center;
+  display: none;
+}
+
+#userOutput {
+  text-align: center;
+  display: none;
+}
+
+#kenny, #github {
+  position: relative;
+}
+
+.kennyhalim {
+  position: absolute;
+  bottom: 0;
+  right:0;
+}
+
+#kenny a {
+  color: #223A5E;
+}
+
+.githublink {
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+
+#github img {
+  height: 40px;
+  width: 40px;
+}

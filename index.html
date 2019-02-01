@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beep Boop</title>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Beep Boop!</h1>
+        <p> Hi there, welcome to <em>Beep Boop!</em><br> a site that list out a bunch of numbers with a tiny bit of <strong>TWIST</strong>!</p>
+      </div>
+      <div class="container-fluid">
+        <div id="intro">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="panel panelhead">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Before we start, here are some rules of the game:</h3>
+                </div>
+                <div class="panel-body panelbody">
+                  <ol>
+                    <li>Only numbers allowed!!!</li>
+                    <li>Numbers <em>divisible</em> by <strong>3</strong> are replaced with "I'm sorry, Dave. I'm afraid I can't do that."</li>
+                    <li>Numbers that <em>contain</em> a <strong>1</strong> are replaced with "Boop!".</li>
+                    <li>Numbers that <em>contain</em> a <strong>0</strong> are replaced with "Beep!".</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div id="example">
+                <h3>For Example:</h3>
+                <h4><strong>If you input 6</strong></h4>
+                <p>"Beep!", "Boop!" , 2 , "I'm sorry, Dave. I'm afraid I can't do that." , 4 , 5 , "I'm sorry, Dave. I'm afraid I can't do that."</p>
+              </div>
+            </div>
+          </div>
+          <div class="centerButton">
+            <button type="button" class="btn btnBoop" id="btnStart">BOOP! to start</button>
+          </div>
+        </div>
+
+        <div id="userInput">
+          <form id="input">
+            <div class="form-group">
+              <label for="numberInput">Enter a number!</label><br>
+              <input id="numberInput" type="number" min="0">
+            </div>
+            <button type="submit" class="btn btnBoop">BEEP BOOP BEEP</button>
+          </form>
+        </div>
+
+        <div id="userOutput">
+          <h3><strong>Beep Boop:</strong></h3>
+          <p id="boopResult"></p>
+          <p id="secondResult"></p>
+
+          <button type="button" class="btn btnBoop" id="btnNormal">Toggle List</button>
+          <button type="button" class="btn btnBoop" id="goBack">Main Menu</button>
+        </div>
+
+        <div id="github">
+          <a href="https://github.com/kennyhalim" class="githublink"><img src="img/github.png" alt="Kenny Github"></a>
+        </div>
+
+        <div id="kenny">
+          <p class="kennyhalim">&copy; <a href="http://kennyhalim.github.io/portfolio">Kenny Halim</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
