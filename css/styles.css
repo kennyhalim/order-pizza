@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Rubik', sans-serif;
   text-align: center;
   color: white;
 }
@@ -19,6 +19,13 @@ body {
 
 #intro h3 {
   -webkit-animation: flash 1s;
+}
+
+#intro img {
+  width:60%;
+  height:60%;
+  -webkit-animation: pulse 0.7s;
+  -webkit-animation-iteration-count:2;
 }
 
 #orderPage, #confirmationPage {
