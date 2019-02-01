@@ -4,6 +4,11 @@ function Pizza(size) {
   this.toppings = [];
 }
 
+Pizza.prototype.addToppings = function(topping){
+  this.toppings.push(topping);
+}
+
+
 
 
 //User Interface
@@ -13,7 +18,7 @@ $(document).ready(function(){
     var inputtedEmail = $("input#email").val();
     var inputtedPhone = $("input#phone").val();
 
-  
+
 
     $(".name").text(inputtedName);
     $(".email").text(inputtedEmail);
