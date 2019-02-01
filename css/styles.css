@@ -17,6 +17,10 @@ body {
   -webkit-animation: tada 1s ;
 }
 
+#pizzaTitle {
+  cursor: pointer;
+}
+
 #intro h3 {
   -webkit-animation: flash 1s;
 }

@@ -37,6 +37,10 @@ function attachButtonListeners() {
   $("#button2").on("click", "#btnMenu", function(){
     location.reload();
   });
+
+  $(".jumbotron").on("click", "#pizzaTitle", function(){
+    location.reload();
+  })
 }
 
 //User Interface
@@ -66,7 +70,7 @@ $(document).ready(function(){
     $(".totalAmount").text(pizza1.calculateTotal());
 
     $("#orderPage").hide();
-    $("#confirmationPage").show();
+    $("#confirmationPage").fadeIn();
     event.preventDefault();
   });
 });
