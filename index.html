@@ -44,10 +44,20 @@
           <div class="form-group">
             <label for="pizzaSize">Pizza Size</label>
             <select class="form-control" id="pizzaSize">
-              <option>Small - $7</option>
-              <option>Medium - $9</option>
-              <option>Large - $11</option>
-              <option>Extra Large - $14</option>
+              <option>Small - 10" - $7</option>
+              <option>Medium - 12" - $9</option>
+              <option>Large - 14" - $11</option>
+              <option>Extra Large -  16" - $14</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pizzaSauce">Pizza Sauce</label>
+            <select class="form-control" id="pizzaSauce">
+              <option>Alfredo - $2</option>
+              <option>BBQ  - $2</option>
+              <option>Pesto - $3</option>
+              <option>Tomato - $1</option>
             </select>
           </div>
 
@@ -79,6 +89,7 @@
         <h4>Your total is <strong>$<span class="totalAmount"></span></strong></h4><br>
         <h4>Below is your pizza order:</h4>
         <h3 id="order-receipt"></h3>
+        <h5>with <span id="order-sauce"></span></h5>
         <h5>with these toppings:</h5>
         <ul id="order-toppings"></ul>
 

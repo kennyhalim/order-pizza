@@ -1,6 +1,7 @@
 //Business Logic for Pizza
-function Pizza(size) {
+function Pizza(size, sauce) {
   this.size = size;
+  this.sauce = sauce;
   this.toppings = [];
 }
 
@@ -19,6 +20,16 @@ Pizza.prototype.calculateTotal = function(){
     total = total + 11;
   } else if (this.size === "Extra") {
     total = total + 14;
+  }
+
+  if (this.sauce === "Alfredo") {
+    total = total + 2;
+  } else if (this.sauce === "BBQ") {
+    total = total + 2;
+  } else if (this.sauce === "Pesto") {
+    total = total + 3;
+  } else if (this.sauce === "Tomato") {
+    total = total + 1;
   }
 
   this.toppings.forEach(function(topping){
@@ -55,9 +66,13 @@ $(document).ready(function(){
     var sizeOfPizza = e.options [e.selectedIndex] .value;
     sizeOfPizza = sizeOfPizza.split(' ');
     var size = sizeOfPizza[0];
-    var pizza1 = new Pizza(size);
-    $("#order-receipt").html("<strong>" +size + " Pizza </strong>");
 
+    var e2 = document.getElementById ("pizzaSauce");
+    var sauceOfPizza = e2.options [e2.selectedIndex] .value;
+    sauceOfPizza = sauceOfPizza.split(' ');
+    var sauce = sauceOfPizza[0];
+
+    var pizza1 = new Pizza(size, sauce);
 
     $("input:checkbox[name=pizzaToppings]:checked").each(function(){
       var pizzaTopping = $(this).val();
@@ -65,6 +80,8 @@ $(document).ready(function(){
       $("#order-toppings").append("<li>" + pizzaTopping + "</li>");
     });
 
+    $("#order-receipt").html("<strong>" + size + " Pizza " + sizeOfPizza[2] + "</strong>");
+    $("#order-sauce").html("<strong>" + sauce + " Sauce </strong>");
     $(".name").text(inputtedName);
     $(".email").text(inputtedEmail);
     $(".totalAmount").text(pizza1.calculateTotal());
