@@ -16,9 +16,9 @@ _This is a website that lets the user order a pizza by selecting the size of the
 ## Specs
 |Behavior   |Input   |Output   |
 |---|---|---|
-| Select Small Pizza without Toppings  | Small Pizza   | $7  |
-| Select Medium Pizza with Extra Cheese, Pepperoni, Mushroom  | Medium Pizza, Extra Cheese, Pepperoni, Mushroom  | $12  |
-| Select Extra Large Pizza with all of the toppings  | Extra Large with all toppings  | $25  |
+| Select Small Pizza with Tomato Sauce without Toppings  | Small Pizza   | $8  |
+| Select Medium Pizza with Pesto Sauce with Extra Cheese, Pepperoni, Mushroom  | Medium Pizza, Extra Cheese, Pepperoni, Mushroom  | $15  |
+| Select Extra Large Pizza with BBQ Sauce with all of the toppings  | Extra Large with all toppings  | $27  |
 
 
 ## Technologies Used
