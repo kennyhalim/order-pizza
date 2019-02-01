@@ -21,6 +21,10 @@ body {
   -webkit-animation: flash 1s;
 }
 
+.pi {
+  font-size: 90px;
+}
+
 #intro img {
   width:55%;
   height:55%;
