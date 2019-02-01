@@ -1,3 +1,8 @@
+//Business Logic for Pizza
+function Pizza(size) {
+  this.size = size;
+  this.toppings = [];
+}
 
 
 
@@ -8,6 +13,7 @@ $(document).ready(function(){
     var inputtedEmail = $("input#email").val();
     var inputtedPhone = $("input#phone").val();
 
+  
 
     $(".name").text(inputtedName);
     $(".email").text(inputtedEmail);
